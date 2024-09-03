@@ -36,7 +36,7 @@ jobs:
           create_credentials_file: 'true'
           access_token_lifetime: 600s
       - name: download test results
-        uses: actions/download-artifact@v3
+        uses: actions/download-artifact@v4.1.7
         with:
           name: test-results
       - name: download FlakyBot
